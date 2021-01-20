@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <title>Brainster Form</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light form_navbar">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#navbarModal" aria-controls="navbarModalLabel" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <span class="ham_icon ham_bottom"></span>
+            <span class="ham_icon ham_middle"></span>
+            <span class="ham_icon ham_top"></span>
+          </span>
+        </button>
+
+        <div class="modal fade" id="navbarModal" tabindex="-1" role="dialog" aria-labelledby="navbarModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="https://marketpreneurs.brainster.co/">Академија за маркетинг</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="http://codepreneurs.co/ ">Академија за програмирање</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://datascience.brainster.co/">Академија за data science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://design.brainster.co/">Академија за дизајн</a>
+          </li> 
+          <li>
+            <a href="form.html">
+              <button class="btn" type="button">Вработи наш студент</button>
+            </a>      
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>        
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://marketpreneurs.brainster.co/">Академија за маркетинг</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://codepreneurs.co/">Академија за програмирање</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://datascience.brainster.co/">Академија за data science</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://design.brainster.co/">Академија за дизајн</a>
+            </li> 
+          </ul>
+          <ul class=" navbar-nav ml-auto">
+            <a href="form.html">
+            <button class="btn my-2 my-sm-0" type="button">Вработи наш студент</button>
+          </a>
+          </ul>        
+        </div>
+    </nav>
+
+    <div class="container-fluid form_container main_bg_color">
+    <div class="container">
+    <h1 class="text-center">Вработи студенти</h1>
+    <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+                <label for="personFullName">Име и презиме</label>
+                <input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Вашето име и презиме" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Контакт имејл</label>
+                <input type="email" class="form-control form-control-lg" id="email" placeholder="Контакт имејл на Вашата компанија" required>
+              </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="form-group">
+                <label for="companyName">Име на компанија</label>
+                <input type="text" class="form-control form-control-lg" id="companyName" placeholder="Име на Вашата компанија" required>
+              </div>
+            <div class="form-group">
+                <label for="phoneNumber">Контакт телефон</label>
+                <input type="text" class="form-control form-control-lg" id="phoneNumber" placeholder="Контакт телефон на Вашата компанија" required>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="dropdownMenuButton">Тип на студенти</label>
+            <div class="dropdown">
+              <button class="btn  dropdownButton btn-lg btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Изберете тип на студент</span>
+                <img src="images/chevron-down.svg" alt="" width="20" height="25">
+              </button>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Студенти од маркетинг</a>
+                <div class="dropdown-divider"></div> 
+                <a class="dropdown-item" href="#">Студенти од програмирање</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Студенти од data science</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Студенти од дизајн</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <button class="btn btn-danger submitButton btn-block btn-lg" type="button"><span>ИСПРАТИ</span></button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <span>Изработено со <span id="heart_sign">&hearts;</span> од студентите на Brainster</span>
+    </div>
+  
+        
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+
+</body>
+</html>
+
+
+
